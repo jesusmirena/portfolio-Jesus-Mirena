@@ -43,7 +43,7 @@ const AboutMe = () => {
   const [shouldShow, setShouldShow] = useState(false);
   const styles = useStyles();
 
-  useEffect(() => setShouldShow(true));
+  useEffect(() => setShouldShow(true), []);
 
   return (
     <Paper className={styles.section}>
